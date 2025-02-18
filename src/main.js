@@ -1,4 +1,5 @@
 import Level from "./scenes/Level.js";
+import Titulo from "./scenes/Titulo.js";
 import Preload from "./scenes/Preload.js";
 
 window.addEventListener('load', function () {
@@ -12,10 +13,12 @@ window.addEventListener('load', function () {
 			mode: Phaser.Scale.FIT,
 			autoCenter: Phaser.Scale.CENTER_BOTH
 		},
+		pixelArt: true,
 		physics: {
         default: 'arcade',
 		arcade: {
 			gravity: { x: 0, y: 0},
+			
 		}
     	},
 		
@@ -23,6 +26,7 @@ window.addEventListener('load', function () {
 
 	game.scene.add("Preload", Preload);
 	game.scene.add("Level", Level);
+	game.scene.add("Titulo", Titulo);
 	game.scene.add("Boot", Boot, true);
 });
 

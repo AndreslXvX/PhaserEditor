@@ -3,6 +3,7 @@
 
 /* START OF COMPILED CODE */
 
+import Hamburguesa_Prefab from "../Hamburguesa_Prefab.js";
 import Prefab_rectangulo from "../Prefab_rectangulo.js";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
@@ -29,22 +30,8 @@ export default class Level extends Phaser.Scene {
 		const teclaDerecha = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
 
 		// dino
-		const dino = this.physics.add.image(622, 615, "_MISSING");
-		dino.setInteractive(new Phaser.Geom.Rectangle(0, 0, 250, 250), Phaser.Geom.Rectangle.Contains);
-		dino.scaleX = 0.7189456357697284;
-		dino.scaleY = 0.6997680182395154;
-		dino.tintFill = true;
-		dino.tintTopLeft = 40172;
-		dino.tintTopRight = 40172;
-		dino.tintBottomLeft = 40172;
-		dino.tintBottomRight = 40172;
-		dino.body.velocity.x = 400;
-		dino.body.velocity.y = 400;
-		dino.body.maxSpeed = 10000000000;
-		dino.body.bounce.x = 1;
-		dino.body.bounce.y = 1;
-		dino.body.collideWorldBounds = true;
-		dino.body.setSize(32, 32, false);
+		const dino = new Hamburguesa_Prefab(this, 629, 593);
+		this.add.existing(dino);
 
 		// score
 		const score = this.add.text(76, 698, "", {});
@@ -65,199 +52,271 @@ export default class Level extends Phaser.Scene {
 		rectangle_1.body.setSize(32, 32, false);
 
 		// rectangle_2
-		const rectangle_2 = new Prefab_rectangulo(this, 426, 148);
+		const rectangle_2 = new Prefab_rectangulo(this, 77, 205.99999766157242);
 		this.add.existing(rectangle_2);
 
 		// prefab_rectangulo
-		const prefab_rectangulo = new Prefab_rectangulo(this, 143, 147);
+		const prefab_rectangulo = new Prefab_rectangulo(this, 77, 257.9999968820965);
 		this.add.existing(prefab_rectangulo);
 
 		// prefab_rectangulo_1
-		const prefab_rectangulo_1 = new Prefab_rectangulo(this, 288, 148);
+		const prefab_rectangulo_1 = new Prefab_rectangulo(this, 189.00000184122132, 205.99999766157242);
 		this.add.existing(prefab_rectangulo_1);
 
 		// prefab_rectangulo_2
-		const prefab_rectangulo_2 = new Prefab_rectangulo(this, 551, 149);
+		const prefab_rectangulo_2 = new Prefab_rectangulo(this, 77, 50);
 		this.add.existing(prefab_rectangulo_2);
 
 		// rectangle
-		const rectangle = new Prefab_rectangulo(this, 973, 151);
+		const rectangle = new Prefab_rectangulo(this, 301.0000036824426, 205.99999766157242);
 		this.add.existing(rectangle);
 
 		// prefab_rectangulo_3
-		const prefab_rectangulo_3 = new Prefab_rectangulo(this, 690, 150);
+		const prefab_rectangulo_3 = new Prefab_rectangulo(this, 413.0000055236639, 205.99999766157242);
 		this.add.existing(prefab_rectangulo_3);
 
 		// prefab_rectangulo_4
-		const prefab_rectangulo_4 = new Prefab_rectangulo(this, 835, 151);
+		const prefab_rectangulo_4 = new Prefab_rectangulo(this, 77, 153.9999984410483);
 		this.add.existing(prefab_rectangulo_4);
 
 		// prefab_rectangulo_5
-		const prefab_rectangulo_5 = new Prefab_rectangulo(this, 1098, 152);
+		const prefab_rectangulo_5 = new Prefab_rectangulo(this, 189.00000184122132, 153.9999984410483);
 		this.add.existing(prefab_rectangulo_5);
 
 		// rectangle_3
-		const rectangle_3 = new Prefab_rectangulo(this, 424, 229);
+		const rectangle_3 = new Prefab_rectangulo(this, 77, 101.99999922052413);
 		this.add.existing(rectangle_3);
 
 		// prefab_rectangulo_6
-		const prefab_rectangulo_6 = new Prefab_rectangulo(this, 141, 228);
+		const prefab_rectangulo_6 = new Prefab_rectangulo(this, 189.00000184122132, 101.99999922052413);
 		this.add.existing(prefab_rectangulo_6);
 
 		// prefab_rectangulo_7
-		const prefab_rectangulo_7 = new Prefab_rectangulo(this, 286, 229);
+		const prefab_rectangulo_7 = new Prefab_rectangulo(this, 301.0000036824426, 153.9999984410483);
 		this.add.existing(prefab_rectangulo_7);
 
 		// prefab_rectangulo_8
-		const prefab_rectangulo_8 = new Prefab_rectangulo(this, 549, 230);
+		const prefab_rectangulo_8 = new Prefab_rectangulo(this, 77, 309.9999961026207);
 		this.add.existing(prefab_rectangulo_8);
 
 		// rectangle_4
-		const rectangle_4 = new Prefab_rectangulo(this, 971, 232);
+		const rectangle_4 = new Prefab_rectangulo(this, 189.00000184122132, 257.9999968820965);
 		this.add.existing(rectangle_4);
 
 		// prefab_rectangulo_9
-		const prefab_rectangulo_9 = new Prefab_rectangulo(this, 688, 231);
+		const prefab_rectangulo_9 = new Prefab_rectangulo(this, 189.00000184122132, 309.9999961026207);
 		this.add.existing(prefab_rectangulo_9);
 
 		// prefab_rectangulo_10
-		const prefab_rectangulo_10 = new Prefab_rectangulo(this, 833, 232);
+		const prefab_rectangulo_10 = new Prefab_rectangulo(this, 301.0000036824426, 309.9999961026207);
 		this.add.existing(prefab_rectangulo_10);
 
 		// prefab_rectangulo_11
-		const prefab_rectangulo_11 = new Prefab_rectangulo(this, 1096, 233);
+		const prefab_rectangulo_11 = new Prefab_rectangulo(this, 189.00000184122132, 50);
 		this.add.existing(prefab_rectangulo_11);
 
 		// rectangle_5
-		const rectangle_5 = new Prefab_rectangulo(this, 423, 83);
+		const rectangle_5 = new Prefab_rectangulo(this, 301.0000036824426, 50);
 		this.add.existing(rectangle_5);
 
 		// prefab_rectangulo_12
-		const prefab_rectangulo_12 = new Prefab_rectangulo(this, 140, 82);
+		const prefab_rectangulo_12 = new Prefab_rectangulo(this, 301.0000036824426, 257.9999968820965);
 		this.add.existing(prefab_rectangulo_12);
 
 		// prefab_rectangulo_13
-		const prefab_rectangulo_13 = new Prefab_rectangulo(this, 285, 83);
+		const prefab_rectangulo_13 = new Prefab_rectangulo(this, 413.0000055236639, 257.9999968820965);
 		this.add.existing(prefab_rectangulo_13);
 
 		// prefab_rectangulo_14
-		const prefab_rectangulo_14 = new Prefab_rectangulo(this, 548, 84);
+		const prefab_rectangulo_14 = new Prefab_rectangulo(this, 525.0000073648852, 205.99999766157242);
 		this.add.existing(prefab_rectangulo_14);
 
 		// rectangle_6
-		const rectangle_6 = new Prefab_rectangulo(this, 970, 86);
+		const rectangle_6 = new Prefab_rectangulo(this, 413.0000055236639, 50);
 		this.add.existing(rectangle_6);
 
 		// prefab_rectangulo_15
-		const prefab_rectangulo_15 = new Prefab_rectangulo(this, 687, 85);
+		const prefab_rectangulo_15 = new Prefab_rectangulo(this, 1197.000018412213, 309.9999961026207);
 		this.add.existing(prefab_rectangulo_15);
 
 		// prefab_rectangulo_16
-		const prefab_rectangulo_16 = new Prefab_rectangulo(this, 832, 86);
+		const prefab_rectangulo_16 = new Prefab_rectangulo(this, 637.0000092061065, 205.99999766157242);
 		this.add.existing(prefab_rectangulo_16);
 
 		// prefab_rectangulo_17
-		const prefab_rectangulo_17 = new Prefab_rectangulo(this, 1095, 87);
+		const prefab_rectangulo_17 = new Prefab_rectangulo(this, 413.0000055236639, 153.9999984410483);
 		this.add.existing(prefab_rectangulo_17);
 
 		// rectangle_7
-		const rectangle_7 = new Prefab_rectangulo(this, 423, 301);
+		const rectangle_7 = new Prefab_rectangulo(this, 301.0000036824426, 101.99999922052413);
 		this.add.existing(rectangle_7);
 
 		// prefab_rectangulo_18
-		const prefab_rectangulo_18 = new Prefab_rectangulo(this, 140, 300);
+		const prefab_rectangulo_18 = new Prefab_rectangulo(this, 1085.0000165709916, 309.9999961026207);
 		this.add.existing(prefab_rectangulo_18);
 
 		// prefab_rectangulo_19
-		const prefab_rectangulo_19 = new Prefab_rectangulo(this, 285, 301);
+		const prefab_rectangulo_19 = new Prefab_rectangulo(this, 525.0000073648852, 153.9999984410483);
 		this.add.existing(prefab_rectangulo_19);
 
 		// prefab_rectangulo_20
-		const prefab_rectangulo_20 = new Prefab_rectangulo(this, 548, 302);
+		const prefab_rectangulo_20 = new Prefab_rectangulo(this, 525.0000073648852, 257.9999968820965);
 		this.add.existing(prefab_rectangulo_20);
 
 		// rectangle_8
-		const rectangle_8 = new Prefab_rectangulo(this, 970, 304);
+		const rectangle_8 = new Prefab_rectangulo(this, 637.0000092061065, 257.9999968820965);
 		this.add.existing(rectangle_8);
 
 		// prefab_rectangulo_21
-		const prefab_rectangulo_21 = new Prefab_rectangulo(this, 687, 303);
+		const prefab_rectangulo_21 = new Prefab_rectangulo(this, 637.0000092061065, 153.9999984410483);
 		this.add.existing(prefab_rectangulo_21);
 
 		// prefab_rectangulo_22
-		const prefab_rectangulo_22 = new Prefab_rectangulo(this, 832, 304);
+		const prefab_rectangulo_22 = new Prefab_rectangulo(this, 749.0000110473278, 205.99999766157242);
 		this.add.existing(prefab_rectangulo_22);
 
 		// prefab_rectangulo_23
-		const prefab_rectangulo_23 = new Prefab_rectangulo(this, 1095, 305);
+		const prefab_rectangulo_23 = new Prefab_rectangulo(this, 973.0000147297704, 309.9999961026207);
 		this.add.existing(prefab_rectangulo_23);
 
 		// rectangle_9
-		const rectangle_9 = new Prefab_rectangulo(this, 428, 365);
+		const rectangle_9 = new Prefab_rectangulo(this, 413.0000055236639, 101.99999922052413);
 		this.add.existing(rectangle_9);
 
 		// prefab_rectangulo_24
-		const prefab_rectangulo_24 = new Prefab_rectangulo(this, 145, 364);
+		const prefab_rectangulo_24 = new Prefab_rectangulo(this, 525.0000073648852, 101.99999922052413);
 		this.add.existing(prefab_rectangulo_24);
 
 		// prefab_rectangulo_25
-		const prefab_rectangulo_25 = new Prefab_rectangulo(this, 290, 365);
+		const prefab_rectangulo_25 = new Prefab_rectangulo(this, 525.0000073648852, 50);
 		this.add.existing(prefab_rectangulo_25);
 
 		// prefab_rectangulo_26
-		const prefab_rectangulo_26 = new Prefab_rectangulo(this, 553, 366);
+		const prefab_rectangulo_26 = new Prefab_rectangulo(this, 637.0000092061065, 50);
 		this.add.existing(prefab_rectangulo_26);
 
 		// rectangle_10
-		const rectangle_10 = new Prefab_rectangulo(this, 975, 368);
+		const rectangle_10 = new Prefab_rectangulo(this, 637.0000092061065, 101.99999922052413);
 		this.add.existing(rectangle_10);
 
 		// prefab_rectangulo_27
-		const prefab_rectangulo_27 = new Prefab_rectangulo(this, 692, 367);
+		const prefab_rectangulo_27 = new Prefab_rectangulo(this, 749.0000110473278, 101.99999922052413);
 		this.add.existing(prefab_rectangulo_27);
 
 		// prefab_rectangulo_28
-		const prefab_rectangulo_28 = new Prefab_rectangulo(this, 837, 368);
+		const prefab_rectangulo_28 = new Prefab_rectangulo(this, 413.0000055236639, 309.9999961026207);
 		this.add.existing(prefab_rectangulo_28);
 
 		// prefab_rectangulo_29
-		const prefab_rectangulo_29 = new Prefab_rectangulo(this, 1100, 369);
+		const prefab_rectangulo_29 = new Prefab_rectangulo(this, 749.0000110473278, 257.9999968820965);
 		this.add.existing(prefab_rectangulo_29);
 
 		// rectangle_11
-		const rectangle_11 = new Prefab_rectangulo(this, 431, 434);
+		const rectangle_11 = new Prefab_rectangulo(this, 749.0000110473278, 50);
 		this.add.existing(rectangle_11);
 
 		// prefab_rectangulo_30
-		const prefab_rectangulo_30 = new Prefab_rectangulo(this, 148, 433);
+		const prefab_rectangulo_30 = new Prefab_rectangulo(this, 861.0000128885491, 205.99999766157242);
 		this.add.existing(prefab_rectangulo_30);
 
 		// prefab_rectangulo_31
-		const prefab_rectangulo_31 = new Prefab_rectangulo(this, 293, 434);
+		const prefab_rectangulo_31 = new Prefab_rectangulo(this, 861.0000128885491, 50);
 		this.add.existing(prefab_rectangulo_31);
 
 		// prefab_rectangulo_32
-		const prefab_rectangulo_32 = new Prefab_rectangulo(this, 556, 435);
+		const prefab_rectangulo_32 = new Prefab_rectangulo(this, 861.0000128885491, 101.99999922052413);
 		this.add.existing(prefab_rectangulo_32);
 
 		// rectangle_12
-		const rectangle_12 = new Prefab_rectangulo(this, 978, 437);
+		const rectangle_12 = new Prefab_rectangulo(this, 973.0000147297704, 101.99999922052413);
 		this.add.existing(rectangle_12);
 
 		// prefab_rectangulo_33
-		const prefab_rectangulo_33 = new Prefab_rectangulo(this, 695, 436);
+		const prefab_rectangulo_33 = new Prefab_rectangulo(this, 749.0000110473278, 153.9999984410483);
 		this.add.existing(prefab_rectangulo_33);
 
 		// prefab_rectangulo_34
-		const prefab_rectangulo_34 = new Prefab_rectangulo(this, 840, 437);
+		const prefab_rectangulo_34 = new Prefab_rectangulo(this, 525.0000073648852, 309.9999961026207);
 		this.add.existing(prefab_rectangulo_34);
 
 		// prefab_rectangulo_35
-		const prefab_rectangulo_35 = new Prefab_rectangulo(this, 1103, 438);
+		const prefab_rectangulo_35 = new Prefab_rectangulo(this, 1197.000018412213, 257.9999968820965);
 		this.add.existing(prefab_rectangulo_35);
 
+		// prefab_rectangulo_36
+		const prefab_rectangulo_36 = new Prefab_rectangulo(this, 861.0000128885491, 153.9999984410483);
+		this.add.existing(prefab_rectangulo_36);
+
+		// prefab_rectangulo_37
+		const prefab_rectangulo_37 = new Prefab_rectangulo(this, 1085.0000165709916, 257.9999968820965);
+		this.add.existing(prefab_rectangulo_37);
+
+		// prefab_rectangulo_38
+		const prefab_rectangulo_38 = new Prefab_rectangulo(this, 973.0000147297704, 205.99999766157242);
+		this.add.existing(prefab_rectangulo_38);
+
+		// prefab_rectangulo_39
+		const prefab_rectangulo_39 = new Prefab_rectangulo(this, 1197.000018412213, 101.99999922052413);
+		this.add.existing(prefab_rectangulo_39);
+
+		// prefab_rectangulo_40
+		const prefab_rectangulo_40 = new Prefab_rectangulo(this, 861.0000128885491, 309.9999961026207);
+		this.add.existing(prefab_rectangulo_40);
+
+		// prefab_rectangulo_41
+		const prefab_rectangulo_41 = new Prefab_rectangulo(this, 973.0000147297704, 50);
+		this.add.existing(prefab_rectangulo_41);
+
+		// prefab_rectangulo_44
+		const prefab_rectangulo_44 = new Prefab_rectangulo(this, 973.0000147297704, 153.9999984410483);
+		this.add.existing(prefab_rectangulo_44);
+
+		// prefab_rectangulo_45
+		const prefab_rectangulo_45 = new Prefab_rectangulo(this, 1085.0000165709916, 50);
+		this.add.existing(prefab_rectangulo_45);
+
+		// rectangle_13
+		const rectangle_13 = new Prefab_rectangulo(this, 861.0000128885491, 257.9999968820965);
+		this.add.existing(rectangle_13);
+
+		// prefab_rectangulo_46
+		const prefab_rectangulo_46 = new Prefab_rectangulo(this, 973.0000147297704, 257.9999968820965);
+		this.add.existing(prefab_rectangulo_46);
+
+		// rectangle_14
+		const rectangle_14 = new Prefab_rectangulo(this, 1197.000018412213, 205.99999766157242);
+		this.add.existing(rectangle_14);
+
+		// prefab_rectangulo_49
+		const prefab_rectangulo_49 = new Prefab_rectangulo(this, 1085.0000165709916, 205.99999766157242);
+		this.add.existing(prefab_rectangulo_49);
+
+		// rectangle_15
+		const rectangle_15 = new Prefab_rectangulo(this, 749.0000110473278, 309.9999961026207);
+		this.add.existing(rectangle_15);
+
+		// prefab_rectangulo_51
+		const prefab_rectangulo_51 = new Prefab_rectangulo(this, 1085.0000165709916, 153.9999984410483);
+		this.add.existing(prefab_rectangulo_51);
+
+		// rectangle_16
+		const rectangle_16 = new Prefab_rectangulo(this, 1197.000018412213, 153.9999984410483);
+		this.add.existing(rectangle_16);
+
+		// prefab_rectangulo_52
+		const prefab_rectangulo_52 = new Prefab_rectangulo(this, 1085.0000165709916, 101.99999922052413);
+		this.add.existing(prefab_rectangulo_52);
+
+		// prefab_rectangulo_53
+		const prefab_rectangulo_53 = new Prefab_rectangulo(this, 637.0000092061065, 309.9999961026207);
+		this.add.existing(prefab_rectangulo_53);
+
+		// prefab_rectangulo_54
+		const prefab_rectangulo_54 = new Prefab_rectangulo(this, 1197.000018412213, 50);
+		this.add.existing(prefab_rectangulo_54);
+
 		// lists
-		const bloques = [rectangle_2, prefab_rectangulo, prefab_rectangulo_1, prefab_rectangulo_2, rectangle, prefab_rectangulo_3, prefab_rectangulo_4, prefab_rectangulo_5, rectangle_3, prefab_rectangulo_6, prefab_rectangulo_7, prefab_rectangulo_8, rectangle_4, prefab_rectangulo_9, prefab_rectangulo_10, prefab_rectangulo_11, rectangle_5, prefab_rectangulo_12, prefab_rectangulo_13, prefab_rectangulo_14, rectangle_6, prefab_rectangulo_15, prefab_rectangulo_16, prefab_rectangulo_17, rectangle_7, prefab_rectangulo_18, prefab_rectangulo_19, prefab_rectangulo_20, rectangle_8, prefab_rectangulo_21, prefab_rectangulo_22, prefab_rectangulo_23, rectangle_9, prefab_rectangulo_24, prefab_rectangulo_25, prefab_rectangulo_26, rectangle_10, prefab_rectangulo_27, prefab_rectangulo_28, prefab_rectangulo_29, rectangle_11, prefab_rectangulo_30, prefab_rectangulo_31, prefab_rectangulo_32, rectangle_12, prefab_rectangulo_33, prefab_rectangulo_34, prefab_rectangulo_35];
+		const bloques = [rectangle_2, prefab_rectangulo, prefab_rectangulo_1, prefab_rectangulo_2, rectangle, prefab_rectangulo_3, prefab_rectangulo_4, prefab_rectangulo_5, rectangle_3, prefab_rectangulo_6, prefab_rectangulo_7, prefab_rectangulo_8, rectangle_4, prefab_rectangulo_9, prefab_rectangulo_10, prefab_rectangulo_11, rectangle_5, prefab_rectangulo_12, prefab_rectangulo_13, prefab_rectangulo_14, rectangle_6, prefab_rectangulo_15, prefab_rectangulo_16, prefab_rectangulo_17, rectangle_7, prefab_rectangulo_18, prefab_rectangulo_19, prefab_rectangulo_20, rectangle_8, prefab_rectangulo_21, prefab_rectangulo_22, prefab_rectangulo_23, rectangle_9, prefab_rectangulo_24, prefab_rectangulo_25, prefab_rectangulo_26, rectangle_10, prefab_rectangulo_27, prefab_rectangulo_28, prefab_rectangulo_29, rectangle_11, prefab_rectangulo_30, prefab_rectangulo_31, prefab_rectangulo_32, rectangle_12, prefab_rectangulo_33, prefab_rectangulo_34, prefab_rectangulo_35, prefab_rectangulo_36, prefab_rectangulo_37, prefab_rectangulo_38, prefab_rectangulo_39, prefab_rectangulo_40, prefab_rectangulo_41, prefab_rectangulo_44, prefab_rectangulo_45, rectangle_13, prefab_rectangulo_46, rectangle_14, prefab_rectangulo_49, rectangle_15, prefab_rectangulo_51, rectangle_16, prefab_rectangulo_52, prefab_rectangulo_53, prefab_rectangulo_54];
 
 		// collider
 		this.physics.add.collider(dino, rectangle_1, this.RectanguloRebotar, undefined, this);
@@ -280,6 +339,10 @@ export default class Level extends Phaser.Scene {
 		this.rectangle_10 = rectangle_10;
 		this.rectangle_11 = rectangle_11;
 		this.rectangle_12 = rectangle_12;
+		this.rectangle_13 = rectangle_13;
+		this.rectangle_14 = rectangle_14;
+		this.rectangle_15 = rectangle_15;
+		this.rectangle_16 = rectangle_16;
 		this.teclaIzquierda = teclaIzquierda;
 		this.teclaDerecha = teclaDerecha;
 		this.bloques = bloques;
@@ -287,7 +350,7 @@ export default class Level extends Phaser.Scene {
 		this.events.emit("scene-awake");
 	}
 
-	/** @type {Phaser.Physics.Arcade.Image} */
+	/** @type {Hamburguesa_Prefab} */
 	dino;
 	/** @type {Phaser.GameObjects.Text} */
 	score;
@@ -317,6 +380,14 @@ export default class Level extends Phaser.Scene {
 	rectangle_11;
 	/** @type {Prefab_rectangulo} */
 	rectangle_12;
+	/** @type {Prefab_rectangulo} */
+	rectangle_13;
+	/** @type {Prefab_rectangulo} */
+	rectangle_14;
+	/** @type {Prefab_rectangulo} */
+	rectangle_15;
+	/** @type {Prefab_rectangulo} */
+	rectangle_16;
 	/** @type {Phaser.Input.Keyboard.Key} */
 	teclaIzquierda;
 	/** @type {Phaser.Input.Keyboard.Key} */
@@ -329,7 +400,6 @@ export default class Level extends Phaser.Scene {
 	// Write more your code here
 
 	create() {
-
 		this.editorCreate();
 
 		this.dino.on("pointerdown", () => {

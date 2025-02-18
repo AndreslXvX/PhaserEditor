@@ -1,0 +1,35 @@
+{
+    "id": "6a33e4f2-c462-41fe-96a6-cd21091d0601",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Titulo",
+        "borderWidth": 1280,
+        "borderHeight": 720
+    },
+    "displayList": [
+        {
+            "type": "Text",
+            "id": "bb66e356-6c40-40c5-8f52-0a85a8ce3a7a",
+            "label": "text_1",
+            "x": 640,
+            "y": 360,
+            "scaleX": 4,
+            "scaleY": 4,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Brick Pong"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

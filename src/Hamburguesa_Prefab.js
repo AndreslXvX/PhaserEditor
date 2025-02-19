@@ -11,7 +11,6 @@ export default class Hamburguesa_Prefab extends Phaser.Physics.Arcade.Sprite {
 	constructor(scene, x, y, texture, frame) {
 		super(scene, x ?? -0.999999999999998, y ?? 30.000000000000004, texture || "burger_spritesheet", frame ?? 0);
 
-		this.setInteractive(new Phaser.Geom.Rectangle(0, 0, 250, 250), Phaser.Geom.Rectangle.Contains);
 		this.scaleX = 2;
 		this.scaleY = 2;
 		this.setOrigin(0.49121914249574344, 0.7050712297213607);

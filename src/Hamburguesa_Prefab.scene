@@ -17,9 +17,6 @@
             "id": "805d8f31-d75d-4bea-9176-2f3e2125d541",
             "label": "dino",
             "scope": "CLASS",
-            "hitArea.shape": "RECTANGLE",
-            "hitArea.width": 250,
-            "hitArea.height": 250,
             "texture": {
                 "key": "burger_spritesheet",
                 "frame": 0

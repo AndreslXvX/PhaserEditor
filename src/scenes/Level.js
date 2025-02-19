@@ -429,11 +429,6 @@ export default class Level extends Phaser.Scene {
 	create() {
 		this.EscalarBordes()
 		this.editorCreate();
-
-		this.dino.on("pointerdown", () => {
-
-			this.welcome.text = "Hello, World!";
-		});
 	}
 	EscalarBordes(){
 		this.scale.scaleMode = Phaser.Scale.RESIZE;

@@ -441,7 +441,7 @@ export default class Level extends Phaser.Scene {
 		this.scale.pageAlignVertically = true;
 	}
 	update() {
-		this.Rebotar()
+		//this.Rebotar()
 		this.AsignarTeclas()
 		this.AsignarBotonesTactiles()
 		this.MovimientoPlataforma()

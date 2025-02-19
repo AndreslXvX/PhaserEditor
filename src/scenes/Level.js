@@ -319,25 +319,25 @@ export default class Level extends Phaser.Scene {
 		this.add.existing(prefab_rectangulo_54);
 
 		// triangle1
-		/** @type {Phaser.GameObjects.Triangle & { body: Phaser.Physics.Arcade.Body }} */
-		const triangle1 = this.add.triangle(64, 656, 0, 128, 64, 0, 128, 128);
-		triangle1.setInteractive(new Phaser.Geom.Rectangle(0, 0, 128, 128), Phaser.Geom.Rectangle.Contains);
+		/** @type {Phaser.GameObjects.Triangle & { body: Phaser.Physics.Arcade.StaticBody }} */
+		const triangle1 = this.add.triangle(64, 656, 0, 64, 128, 128, 128, 0);
+		triangle1.setInteractive(new Phaser.Geom.Rectangle(200, 200, 200, 200), Phaser.Geom.Rectangle.Contains);
 		triangle1.scaleX = 0.5;
 		triangle1.scaleY = 0.5;
-		triangle1.angle = -90;
-		this.physics.add.existing(triangle1, false);
-		triangle1.body.setSize(128, 128, false);
+		this.physics.add.existing(triangle1, true);
+		triangle1.body.setOffset(-63, -386);
+		triangle1.body.setSize(576, 560, false);
 		triangle1.isFilled = true;
 
 		// triangle2
 		/** @type {Phaser.GameObjects.Triangle & { body: Phaser.Physics.Arcade.Body }} */
-		const triangle2 = this.add.triangle(1200, 656, 0, 128, 64, 0, 128, 128);
+		const triangle2 = this.add.triangle(1200, 656, 0, 0, 0, 128, 128, 64);
 		triangle2.setInteractive(new Phaser.Geom.Rectangle(0, 0, 128, 128), Phaser.Geom.Rectangle.Contains);
 		triangle2.scaleX = 0.5;
-		triangle2.scaleY = -0.5;
-		triangle2.angle = -90;
+		triangle2.scaleY = 0.5;
 		this.physics.add.existing(triangle2, false);
-		triangle2.body.setSize(128, 128, false);
+		triangle2.body.setOffset(-321, -378);
+		triangle2.body.setSize(560, 576, false);
 		triangle2.isFilled = true;
 
 		// lists
@@ -415,7 +415,7 @@ export default class Level extends Phaser.Scene {
 	rectangle_15;
 	/** @type {Prefab_rectangulo} */
 	rectangle_16;
-	/** @type {Phaser.GameObjects.Triangle & { body: Phaser.Physics.Arcade.Body }} */
+	/** @type {Phaser.GameObjects.Triangle & { body: Phaser.Physics.Arcade.StaticBody }} */
 	triangle1;
 	/** @type {Phaser.GameObjects.Triangle & { body: Phaser.Physics.Arcade.Body }} */
 	triangle2;

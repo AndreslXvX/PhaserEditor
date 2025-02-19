@@ -16,9 +16,11 @@ export default class Level extends Phaser.Scene {
 		/* START-USER-CTR-CODE */
 		this.frutaVelo = 400
 		this.puntaje = 0
-		this.moverIzquierda = false
-		this.moverDerecha = false
-		this.detener = false
+		this.moverIzquierda;
+		this.moverDerecha;
+		this.verdad = true;
+		this.falso = false;
+		
 		// Write your code here.
 		/* END-USER-CTR-CODE */
 	}
@@ -429,6 +431,7 @@ export default class Level extends Phaser.Scene {
 	create() {
 		this.EscalarBordes()
 		this.editorCreate();
+		this.AsignarBotonesTactiles()
 	}
 	EscalarBordes(){
 		this.scale.scaleMode = Phaser.Scale.RESIZE;
@@ -438,37 +441,41 @@ export default class Level extends Phaser.Scene {
 	update() {
 		this.Rebotar()
 		this.AsignarTeclas()
-		this.AsignarBotonesTactiles()
-		this.MovimientoPlataforma()
-
+	}
+	DetectarTeclas(){
+		this.input.addListener("any", function () {this.AsignarTeclas()})
 
 	}
+	
+	AsignarTeclas(){
+		if(this.teclaIzquierda.isDown) {
+			this.MovimientoPlataforma(this.verdad, this.falso)
+		} else if(this.teclaDerecha.isDown) {
+			this.MovimientoPlataforma(this.falso, this.verdad)
+			}
+
+		
+		
+	}
+
 	AsignarBotonesTactiles() {
-	this.botonIzquierda.on('pointerdown', () => this.moverIzquierda = true);
-	this.botonDerecha.on('pointerdown', () => this.moverDerecha = true)
-	this.botonIzquierda.on('pointerup', () => this.moverIzquierda = false);
-	this.botonDerecha.on('pointerup', () => this.moverDerecha = false)
+	this.input.keyboard.on('keyup', () => this.MovimientoPlataforma(this.falso, this.falso) );
+	this.botonIzquierda.on('pointerdown', () => this.MovimientoPlataforma(this.verdad, this.falso));
+	this.botonDerecha.on('pointerdown', () => this.MovimientoPlataforma(this.falso, this.verdad))
+	this.botonIzquierda.on('pointerout', () => this.MovimientoPlataforma(this.falso, this.falso));
+	this.botonDerecha.on('pointerout', () => this.MovimientoPlataforma(this.falso, this.falso))
 	}
-	MovimientoPlataforma(){
-		if(this.moverDerecha){
+	
+	MovimientoPlataforma(moverIzquierda, moverDerecha){
+		if(moverDerecha){
 			this.rectangle_1.body.setVelocityX(600)
-		} else if(this. moverIzquierda){
+		} else if(moverIzquierda){
 			this.rectangle_1.body.setVelocityX(-600)
 		}else {
+			this.moverIzquierda = false
+			this.moverDerecha = false
 			this.rectangle_1.body.setVelocityX(0)
 		}
-	}
-
-	AsignarTeclas(){
-		if(this.teclaIzquierda.isDown) { 
-
-			this.rectangle_1.body.setVelocityX(-600)
-
-		} else if(this.teclaDerecha.isDown) { 
-			this.rectangle_1.body.setVelocityX(600)
-		} else {
-			this.rectangle_1.body.setVelocityX(0)
-			}
 	}
 	ReiniciarJuego(){
 		this.puntaje = 0

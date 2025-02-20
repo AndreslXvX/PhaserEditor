@@ -13,24 +13,24 @@
     },
     "displayList": [
         {
-            "type": "Rectangle",
+            "type": "ArcadeImage",
             "id": "4427e631-e909-4f8c-a916-6fdc605a2b9c",
             "label": "rectangle_2",
             "scope": "CLASS",
             "hitArea.shape": "RECTANGLE",
             "hitArea.width": 128,
             "hitArea.height": 128,
-            "scaleX": 0.7187500143845413,
-            "scaleY": 0.24999999391034483,
+            "texture": {
+                "key": "bricks_1",
+                "frame": 9
+            },
+            "scaleX": 3,
+            "scaleY": 3,
             "ArcadeComponent.active": true,
             "pushable": false,
             "immovable": true,
-            "body.width": 128,
-            "body.height": 128,
-            "isFilled": true,
-            "fillColor": "#ff5701",
-            "width": 128,
-            "height": 128
+            "body.width": 32,
+            "body.height": 16
         }
     ],
     "plainObjects": [],

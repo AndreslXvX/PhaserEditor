@@ -6,22 +6,21 @@
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default class Prefab_rectangulo extends Phaser.GameObjects.Rectangle {
+export default class Prefab_rectangulo extends Phaser.Physics.Arcade.Image {
 
-	constructor(scene, x, y, width, height) {
-		super(scene, x ?? 0, y ?? 0, width ?? 128, height ?? 128);
+	constructor(scene, x, y, texture, frame) {
+		super(scene, x ?? 0, y ?? 0, texture || "bricks_1", frame ?? 9);
 
 		this.setInteractive(new Phaser.Geom.Rectangle(0, 0, 128, 128), Phaser.Geom.Rectangle.Contains);
-		this.scaleX = 0.7187500143845413;
-		this.scaleY = 0.24999999391034483;
+		this.scaleX = 3;
+		this.scaleY = 3;
 		scene.physics.add.existing(this, false);
 		this.body.pushable = false;
 		this.body.immovable = true;
-		this.body.setSize(128, 128, false);
-		this.isFilled = true;
-		this.fillColor = 16733953;
+		this.body.setSize(32, 16, false);
 
 		/* START-USER-CTR-CODE */
+		this.golpes = 3
 		// Write your code here.
 		/* END-USER-CTR-CODE */
 	}

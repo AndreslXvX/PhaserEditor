@@ -13,36 +13,27 @@
     },
     "displayList": [
         {
-            "type": "ArcadeSprite",
+            "type": "Image",
             "id": "805d8f31-d75d-4bea-9176-2f3e2125d541",
             "label": "dino",
             "scope": "CLASS",
+            "hitArea.shape": "RECTANGLE",
             "texture": {
-                "key": "burger_spritesheet",
-                "frame": 0
+                "key": "paddles_and_balls_prueba2"
             },
-            "x": -0.999999999999998,
-            "y": 30.000000000000004,
             "scaleX": 2,
             "scaleY": 2,
-            "originX": 0.49121914249574344,
-            "originY": 0.7050712297213607,
-            "tintTopLeft": "",
-            "tintTopRight": "",
-            "tintBottomLeft": "",
-            "tintBottomRight": "",
             "ArcadeComponent.active": true,
-            "body.velocity.x": 400,
+            "body.velocity.x": -400,
             "body.velocity.y": 400,
             "maxSpeed": 10000000000,
             "body.bounce.x": 1,
             "body.bounce.y": 1,
             "collideWorldBounds": true,
             "angularAcceleration": 400,
-            "body.width": 22,
-            "body.height": 20,
-            "body.offset.x": 5,
-            "body.offset.y": 12
+            "body.width": 14,
+            "body.height": 14,
+            "body.offset.y": 2
         }
     ],
     "plainObjects": [],

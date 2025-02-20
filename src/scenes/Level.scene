@@ -2,7 +2,6 @@
     "id": "01aefa93-6044-4159-8358-7e91310aa05f",
     "sceneType": "SCENE",
     "settings": {
-        "snapEnabled": true,
         "exportClass": true,
         "autoImport": true,
         "importFileExtension": true,
@@ -14,40 +13,42 @@
     },
     "displayList": [
         {
-            "type": "Rectangle",
-            "id": "a1ead2e5-ded5-4906-80ea-7daddfc472d4",
-            "label": "botonDerecha",
+            "type": "Image",
+            "id": "6f0ec8bb-8d54-4e0f-8372-80aba2919456",
+            "label": "image_1",
             "scope": "CLASS",
-            "hitArea.shape": "RECTANGLE",
-            "hitArea.width": 128,
-            "hitArea.height": 128,
-            "x": 1072,
-            "y": 528,
-            "scaleX": 3.0030903181066932,
-            "scaleY": 2.6892953062526805,
-            "ArcadeComponent.active": true,
-            "body.width": 128,
-            "body.height": 128,
-            "width": 128,
-            "height": 128
+            "texture": {
+                "key": "All_Buttons",
+                "frame": 193
+            },
+            "x": 320,
+            "y": 480,
+            "scaleX": 6,
+            "scaleY": 6,
+            "alpha": 0.3,
+            "alphaTopLeft": 0.3,
+            "alphaTopRight": 0.3,
+            "alphaBottomLeft": 0.3,
+            "alphaBottomRight": 0.3
         },
         {
-            "type": "Rectangle",
-            "id": "7e50475a-a434-4065-b01b-3fb7fc946cdc",
-            "label": "botonIzquierda",
+            "type": "Image",
+            "id": "00d7d555-d124-4076-881e-563dd2fa8dff",
+            "label": "image_2",
             "scope": "CLASS",
-            "hitArea.shape": "RECTANGLE",
-            "hitArea.width": 128,
-            "hitArea.height": 128,
-            "x": 224,
-            "y": 528,
-            "scaleX": 3.1884837850051375,
-            "scaleY": 2.864885253301987,
-            "ArcadeComponent.active": true,
-            "body.width": 128,
-            "body.height": 128,
-            "width": 128,
-            "height": 128
+            "texture": {
+                "key": "All_Buttons",
+                "frame": 190
+            },
+            "x": 960,
+            "y": 480,
+            "scaleX": 6,
+            "scaleY": 6,
+            "alpha": 0.3,
+            "alphaTopLeft": 0.3,
+            "alphaTopRight": 0.3,
+            "alphaBottomLeft": 0.3,
+            "alphaBottomRight": 0.3
         },
         {
             "prefabId": "0a56a93b-b24e-4abf-8254-a6af1c6d6ae4",
@@ -59,15 +60,15 @@
             "label": "dino",
             "scope": "CLASS",
             "x": 624,
-            "y": 512
+            "y": 640
         },
         {
             "type": "Text",
             "id": "b2b3dbd5-2106-41fa-8a04-9b511e3401a9",
             "label": "score",
             "scope": "CLASS",
-            "x": 80,
-            "y": 16,
+            "x": 624,
+            "y": 704,
             "originX": 0.5,
             "originY": 0.5,
             "text": "Puntaje : 0",
@@ -82,18 +83,22 @@
             "hitArea.shape": "RECTANGLE",
             "hitArea.width": 32,
             "hitArea.height": 32,
+            "texture": {
+                "key": "paddles_and_balls",
+                "frame": 8
+            },
             "x": 624,
-            "y": 592,
-            "scaleX": 3.676401903343179,
-            "scaleY": 0.5958157730829288,
-            "tintFill": true,
+            "y": 672,
+            "scaleX": 3,
+            "scaleY": 3,
             "ArcadeComponent.active": true,
             "allowGravity": false,
             "collideWorldBounds": true,
             "pushable": false,
             "immovable": true,
             "body.width": 32,
-            "body.height": 32
+            "body.height": 11,
+            "body.offset.y": 6
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -104,8 +109,8 @@
             ],
             "label": "rectangle_2",
             "scope": "CLASS",
-            "x": 77,
-            "y": 205.99999766157242
+            "x": 110,
+            "y": 188
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -115,8 +120,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo",
-            "x": 77,
-            "y": 257.9999968820965
+            "x": 110,
+            "y": 244
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -126,8 +131,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_1",
-            "x": 189.00000184122132,
-            "y": 205.99999766157242
+            "x": 214,
+            "y": 188
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -137,8 +142,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_2",
-            "x": 77,
-            "y": 50
+            "x": 110,
+            "y": 76
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -149,8 +154,8 @@
             ],
             "label": "rectangle",
             "scope": "CLASS",
-            "x": 301.0000036824426,
-            "y": 205.99999766157242
+            "x": 422,
+            "y": 132
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -160,8 +165,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_3",
-            "x": 413.0000055236639,
-            "y": 205.99999766157242
+            "x": 422,
+            "y": 188
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -171,8 +176,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_4",
-            "x": 77,
-            "y": 153.9999984410483
+            "x": 1150,
+            "y": 356
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -182,8 +187,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_5",
-            "x": 189.00000184122132,
-            "y": 153.9999984410483
+            "x": 1046,
+            "y": 356
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -194,8 +199,8 @@
             ],
             "label": "rectangle_3",
             "scope": "CLASS",
-            "x": 77,
-            "y": 101.99999922052413
+            "x": 110,
+            "y": 132
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -205,8 +210,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_6",
-            "x": 189.00000184122132,
-            "y": 101.99999922052413
+            "x": 214,
+            "y": 132
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -216,8 +221,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_7",
-            "x": 301.0000036824426,
-            "y": 153.9999984410483
+            "x": 318,
+            "y": 300
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -227,8 +232,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_8",
-            "x": 77,
-            "y": 309.9999961026207
+            "x": 110,
+            "y": 300
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -239,8 +244,8 @@
             ],
             "label": "rectangle_4",
             "scope": "CLASS",
-            "x": 189.00000184122132,
-            "y": 257.9999968820965
+            "x": 214,
+            "y": 244
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -250,8 +255,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_9",
-            "x": 189.00000184122132,
-            "y": 309.9999961026207
+            "x": 214,
+            "y": 300
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -261,8 +266,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_10",
-            "x": 301.0000036824426,
-            "y": 309.9999961026207
+            "x": 318,
+            "y": 244
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -272,8 +277,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_11",
-            "x": 189.00000184122132,
-            "y": 50
+            "x": 214,
+            "y": 76
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -284,8 +289,8 @@
             ],
             "label": "rectangle_5",
             "scope": "CLASS",
-            "x": 301.0000036824426,
-            "y": 50
+            "x": 318,
+            "y": 76
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -295,8 +300,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_12",
-            "x": 301.0000036824426,
-            "y": 257.9999968820965
+            "x": 318,
+            "y": 188
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -306,8 +311,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_13",
-            "x": 413.0000055236639,
-            "y": 257.9999968820965
+            "x": 526,
+            "y": 188
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -317,8 +322,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_14",
-            "x": 525.0000073648852,
-            "y": 205.99999766157242
+            "x": 630,
+            "y": 132
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -329,8 +334,8 @@
             ],
             "label": "rectangle_6",
             "scope": "CLASS",
-            "x": 413.0000055236639,
-            "y": 50
+            "x": 422,
+            "y": 76
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -340,8 +345,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_15",
-            "x": 1197.000018412213,
-            "y": 309.9999961026207
+            "x": 318,
+            "y": 356
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -351,8 +356,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_16",
-            "x": 637.0000092061065,
-            "y": 205.99999766157242
+            "x": 630,
+            "y": 188
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -362,8 +367,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_17",
-            "x": 413.0000055236639,
-            "y": 153.9999984410483
+            "x": 422,
+            "y": 300
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -374,8 +379,8 @@
             ],
             "label": "rectangle_7",
             "scope": "CLASS",
-            "x": 301.0000036824426,
-            "y": 101.99999922052413
+            "x": 318,
+            "y": 132
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -385,8 +390,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_18",
-            "x": 1085.0000165709916,
-            "y": 309.9999961026207
+            "x": 942,
+            "y": 300
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -396,8 +401,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_19",
-            "x": 525.0000073648852,
-            "y": 153.9999984410483
+            "x": 526,
+            "y": 300
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -407,8 +412,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_20",
-            "x": 525.0000073648852,
-            "y": 257.9999968820965
+            "x": 526,
+            "y": 244
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -419,8 +424,8 @@
             ],
             "label": "rectangle_8",
             "scope": "CLASS",
-            "x": 637.0000092061065,
-            "y": 257.9999968820965
+            "x": 734,
+            "y": 188
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -430,8 +435,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_21",
-            "x": 637.0000092061065,
-            "y": 153.9999984410483
+            "x": 1150,
+            "y": 188
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -441,8 +446,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_22",
-            "x": 749.0000110473278,
-            "y": 205.99999766157242
+            "x": 838,
+            "y": 188
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -452,8 +457,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_23",
-            "x": 973.0000147297704,
-            "y": 309.9999961026207
+            "x": 630,
+            "y": 356
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -464,8 +469,8 @@
             ],
             "label": "rectangle_9",
             "scope": "CLASS",
-            "x": 413.0000055236639,
-            "y": 101.99999922052413
+            "x": 526,
+            "y": 76
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -475,8 +480,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_24",
-            "x": 525.0000073648852,
-            "y": 101.99999922052413
+            "x": 526,
+            "y": 132
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -486,8 +491,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_25",
-            "x": 525.0000073648852,
-            "y": 50
+            "x": 630,
+            "y": 76
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -497,8 +502,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_26",
-            "x": 637.0000092061065,
-            "y": 50
+            "x": 734,
+            "y": 76
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -509,8 +514,8 @@
             ],
             "label": "rectangle_10",
             "scope": "CLASS",
-            "x": 637.0000092061065,
-            "y": 101.99999922052413
+            "x": 734,
+            "y": 132
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -520,8 +525,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_27",
-            "x": 749.0000110473278,
-            "y": 101.99999922052413
+            "x": 838,
+            "y": 132
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -531,8 +536,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_28",
-            "x": 413.0000055236639,
-            "y": 309.9999961026207
+            "x": 422,
+            "y": 244
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -542,8 +547,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_29",
-            "x": 749.0000110473278,
-            "y": 257.9999968820965
+            "x": 838,
+            "y": 244
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -554,8 +559,8 @@
             ],
             "label": "rectangle_11",
             "scope": "CLASS",
-            "x": 749.0000110473278,
-            "y": 50
+            "x": 838,
+            "y": 76
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -565,8 +570,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_30",
-            "x": 861.0000128885491,
-            "y": 205.99999766157242
+            "x": 942,
+            "y": 188
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -576,8 +581,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_31",
-            "x": 861.0000128885491,
-            "y": 50
+            "x": 942,
+            "y": 76
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -587,8 +592,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_32",
-            "x": 861.0000128885491,
-            "y": 101.99999922052413
+            "x": 942,
+            "y": 132
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -599,8 +604,8 @@
             ],
             "label": "rectangle_12",
             "scope": "CLASS",
-            "x": 973.0000147297704,
-            "y": 101.99999922052413
+            "x": 1150,
+            "y": 76
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -610,8 +615,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_33",
-            "x": 749.0000110473278,
-            "y": 153.9999984410483
+            "x": 734,
+            "y": 356
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -621,8 +626,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_34",
-            "x": 525.0000073648852,
-            "y": 309.9999961026207
+            "x": 630,
+            "y": 244
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -632,8 +637,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_35",
-            "x": 1197.000018412213,
-            "y": 257.9999968820965
+            "x": 422,
+            "y": 356
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -643,8 +648,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_36",
-            "x": 861.0000128885491,
-            "y": 153.9999984410483
+            "x": 1046,
+            "y": 188
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -654,8 +659,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_37",
-            "x": 1085.0000165709916,
-            "y": 257.9999968820965
+            "x": 526,
+            "y": 356
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -665,8 +670,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_38",
-            "x": 973.0000147297704,
-            "y": 205.99999766157242
+            "x": 1046,
+            "y": 132
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -676,8 +681,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_39",
-            "x": 1197.000018412213,
-            "y": 101.99999922052413
+            "x": 838,
+            "y": 300
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -687,8 +692,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_40",
-            "x": 861.0000128885491,
-            "y": 309.9999961026207
+            "x": 1046,
+            "y": 244
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -698,8 +703,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_41",
-            "x": 973.0000147297704,
-            "y": 50
+            "x": 1046,
+            "y": 76
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -709,8 +714,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_44",
-            "x": 973.0000147297704,
-            "y": 153.9999984410483
+            "x": 214,
+            "y": 356
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -720,8 +725,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_45",
-            "x": 1085.0000165709916,
-            "y": 50
+            "x": 110,
+            "y": 356
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -732,8 +737,8 @@
             ],
             "label": "rectangle_13",
             "scope": "CLASS",
-            "x": 861.0000128885491,
-            "y": 257.9999968820965
+            "x": 942,
+            "y": 244
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -743,8 +748,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_46",
-            "x": 973.0000147297704,
-            "y": 257.9999968820965
+            "x": 1150,
+            "y": 132
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -755,8 +760,8 @@
             ],
             "label": "rectangle_14",
             "scope": "CLASS",
-            "x": 1197.000018412213,
-            "y": 205.99999766157242
+            "x": 838,
+            "y": 356
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -766,8 +771,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_49",
-            "x": 1085.0000165709916,
-            "y": 205.99999766157242
+            "x": 1150,
+            "y": 244
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -778,8 +783,8 @@
             ],
             "label": "rectangle_15",
             "scope": "CLASS",
-            "x": 749.0000110473278,
-            "y": 309.9999961026207
+            "x": 734,
+            "y": 300
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -789,8 +794,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_51",
-            "x": 1085.0000165709916,
-            "y": 153.9999984410483
+            "x": 1046,
+            "y": 300
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -801,8 +806,8 @@
             ],
             "label": "rectangle_16",
             "scope": "CLASS",
-            "x": 1197.000018412213,
-            "y": 153.9999984410483
+            "x": 942,
+            "y": 356
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -812,8 +817,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_52",
-            "x": 1085.0000165709916,
-            "y": 101.99999922052413
+            "x": 1150,
+            "y": 300
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -823,8 +828,8 @@
                 "y"
             ],
             "label": "prefab_rectangulo_53",
-            "x": 637.0000092061065,
-            "y": 309.9999961026207
+            "x": 734,
+            "y": 244
         },
         {
             "prefabId": "2ca25946-cb88-46c3-9e10-45ee7af04962",
@@ -834,8 +839,45 @@
                 "y"
             ],
             "label": "prefab_rectangulo_54",
-            "x": 1197.000018412213,
-            "y": 50
+            "x": 630,
+            "y": 300
+        },
+        {
+            "type": "Rectangle",
+            "id": "a1ead2e5-ded5-4906-80ea-7daddfc472d4",
+            "label": "botonDerecha",
+            "scope": "CLASS",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 128,
+            "hitArea.height": 128,
+            "x": 944,
+            "y": 368,
+            "scaleX": 6,
+            "scaleY": 6,
+            "ArcadeComponent.active": true,
+            "pushable": false,
+            "body.width": 128,
+            "body.height": 128,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "7e50475a-a434-4065-b01b-3fb7fc946cdc",
+            "label": "botonIzquierda",
+            "scope": "CLASS",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 128,
+            "hitArea.height": 128,
+            "x": 288,
+            "y": 368,
+            "scaleX": 6,
+            "scaleY": 6,
+            "ArcadeComponent.active": true,
+            "body.width": 128,
+            "body.height": 128,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [

@@ -2,27 +2,139 @@
     "section1": {
         "files": [
             {
-                "url": "assets/animations.json",
-                "type": "animation",
-                "key": "animations"
-            },
-            {
-                "url": "assets/burger_spritesheet.png",
+                "url": "assets/All_Buttons.png",
                 "frameConfig": {
-                    "frameWidth": 32,
-                    "frameHeight": 32,
+                    "frameWidth": 20,
+                    "frameHeight": 20,
                     "startFrame": 0,
                     "endFrame": -1,
                     "spacing": 0,
                     "margin": 0
                 },
                 "type": "spritesheet",
-                "key": "burger_spritesheet"
+                "key": "All_Buttons"
+            },
+            {
+                "url": "assets/Brick_Breaker_Assets/Brick_Breaker_Assets/bricks.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 17,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "bricks"
+            },
+            {
+                "url": "assets/bricks.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "bricks_1"
             },
             {
                 "url": "assets/dino.png",
                 "key": "dino",
                 "type": "image"
+            },
+            {
+                "url": [
+                    "assets/explosion.wav"
+                ],
+                "type": "audio",
+                "key": "explosion"
+            },
+            {
+                "url": [
+                    "assets/hurt.wav"
+                ],
+                "type": "audio",
+                "key": "hurt"
+            },
+            {
+                "url": [
+                    "assets/jump.wav"
+                ],
+                "type": "audio",
+                "key": "jump"
+            },
+            {
+                "url": "assets/Brick_Breaker_Assets/Brick_Breaker_Assets/Paddle_Parts.png",
+                "frameConfig": {
+                    "frameWidth": 8,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Paddle_Parts"
+            },
+            {
+                "url": "assets/Brick_Breaker_Assets/Brick_Breaker_Assets/paddles_and_balls.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 17,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "paddles_and_balls"
+            },
+            {
+                "url": "assets/Brick_Breaker_Assets/Brick_Breaker_Assets/paddles_and_balls - copia.png",
+                "frameConfig": {
+                    "frameWidth": 20,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "paddles_and_balls - copia"
+            },
+            {
+                "url": "assets/paddles_and_balls.PNG",
+                "frameConfig": {
+                    "frameWidth": 8,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "paddles_and_balls_1"
+            },
+            {
+                "url": "assets/paddles_and_balls_prueba.png",
+                "frameConfig": {
+                    "frameWidth": 17,
+                    "frameHeight": 14,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "paddles_and_balls_prueba"
+            },
+            {
+                "url": "assets/paddles_and_balls_prueba2.png",
+                "type": "image",
+                "key": "paddles_and_balls_prueba2"
             }
         ]
     },
